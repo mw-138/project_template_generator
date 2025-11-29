@@ -5,6 +5,8 @@ from commands.command import Command
 
 @dataclass
 class HelpCommand(Command):
+    id: str = "help"
+
     def perform_action(self, args: list[str]) -> None:
         from config import COMMANDS
 
